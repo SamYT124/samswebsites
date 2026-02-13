@@ -8,15 +8,45 @@
             color: #FFFFFF; 
             font-family: sans-serif;
         }
+button {
+    background-color: #4CAF50; /* green */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* darker green on hover */
+}
+
         </style>
     </head>
     <body>
         <h1>these buttons transport you to one of my websites</h1>
+        <div>
         <button type="button" onclick="cbopen()">the holy chicken bible</button>
-        <button type="button" onclick="ccopen()">click counter</button>
+        <p style="font-size: 14px; color: #ccc;">a (satire) bible i made about chickens.</p>
+        </div>
+        <hr>
+        <div>
+        <button type="button" onclick="ccopen()">clicks counter</button>
+        <p style="font-size: 14px; color: #ccc;">a useless website i made to count clicks.</p>
+        </div>
+        <hr>
+        <div>
         <button type="button" onclick="dcmpopen()">dont click the button pls</button>
+        <p style="font-size: 14px; color: #ccc;">just don't</p>
+        </div>
+        <hr>
+        <div>
         <button type="button" onclick="antcopen()">a normal tax calculator</button>
-    <p id="demo">just click</p>
+        <p style="font-size: 14px; color: #ccc;">just an ordinary tax calculator</p>
+        </div>
 
     <script>
         function cbopen() {
