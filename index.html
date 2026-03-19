@@ -30,6 +30,42 @@
             border: 10px;
             margin: 20px;
         }
+        .about button{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: left;
+            background-color: #001494; 
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+            position: relative;
+            overflow: visible;
+        }
+        .about-text {
+            visibility: hidden; 
+            opacity: 0; 
+            position: absolute;
+            top: 110%; 
+            left: 0;
+            color: #FFFFFF;
+            padding: 5px;
+            white-space: nowrap; 
+            transition: opacity 0.3s, visibility 0.3s;
+            z-index: 10;
+        }
+
+        .about button:hover .about-text{
+            visibility: visible;
+            opacity: 1; 
+        }      
+        .about button:hover {
+            background-color: #17024a;   
+        }           
         </style>
     </head>
     <body>
@@ -92,6 +128,23 @@
         </div>
         
         <img class="hahaimg" src="idk.jpg" alt="idk">
+        <div class="about">
+            <button type="button">ABOUT ME
+                <span class="about-text">
+                    Hi, I am Sam, a 7th grader making websites for fun 
+                    <br>
+                    and for my love of coding. No, I do not make 
+                    <br>
+                    these websites for money, but rather for the 
+                    <br>
+                    sake of letting my imagination go wild (also 
+                    <br>
+                    to bypass my school blocking game websites but 
+                    <br>
+                    we don't talk about that).
+                </span>
+            </button>
+        </div>
 
     <script>
         function cbopen() {
